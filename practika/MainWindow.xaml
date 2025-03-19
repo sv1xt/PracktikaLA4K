@@ -1,0 +1,172 @@
+﻿<Window x:Class="practika.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Главное окно" Height="450" Width="800"
+       WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Выход" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Администрирование" Name="menuAdmin">
+                <MenuItem Header="Пользователи" Name="menuUsers" Click="menuUsers_Click"/>
+                <MenuItem Header="Склады" Name="menuWarehouses" Click="menuWarehouses_Click"/>
+                <MenuItem Header="Товары" Name="menuProducts" Click="menuProducts_Click"/>
+                <MenuItem Header="Клиенты" Name="menuClients" Click="menuClients_Click"/>
+                <MenuItem Header="Поставщики" Name="menuSuppliers" Click="menuSuppliers_Click"/>
+            </MenuItem>
+            <MenuItem Header="Отчёты" Name="menuReports">
+                <MenuItem Header="Отчет по складам" Name="menuWarehouseReport" Click="menuWarehouseReport_Click"/>
+                <MenuItem Header="Отчет по оборотам" Name="menuTurnoverReport"  Click="menuTurnoverReport_Click"/>
+                <MenuItem Header="Отчет по остаткам" Name="menuStockReport" Click="menuStockReport_Click"/>
+                <MenuItem Header="Отчет по инвентаризации" Name="inventoryReport" Click="inventoryReport_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <TabControl Grid.Row="1" Name="tabControl">
+            <!-- Вкладка "Пользователи" -->
+            <TabItem Header="Пользователи" Name="tabUsers">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <Button Name="btnAddUser" Content="Добавить" Margin="5" Padding="10,3" Click="btnAddUser_Click"/>
+                        <Button Name="btnEditUser" Content="Редактировать" Margin="5" Padding="10,3" Click="btnEditUser_Click"/>
+                        <Button Name="btnDeleteUser" Content="Удалить" Margin="5" Padding="10,3" Click="btnDeleteUser_Click"/>
+                    </StackPanel>
+                    <DataGrid Name="dgUsers" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" Margin="5">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding UserId}" Width="Auto"/>
+                            <DataGridTextColumn Header="Имя пользователя" Binding="{Binding Username}" Width="*"/>
+                            <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
+                            <DataGridTextColumn Header="Роль" Binding="{Binding RoleName}" Width="Auto"/>
+                            <!-- Другие столбцы, которые вы хотите отображать (кроме пароля, соли и секрета 2FA) -->
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Вкладка "Склады" -->
+            <TabItem Header="Склады" Name="tabWarehouses">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <Button Name="btnAddWarehouse" Content="Добавить" Margin="5" Padding="10,3" Click="btnAddWarehouse_Click"/>
+                        <Button Name="btnEditWarehouse" Content="Редактировать" Margin="5" Padding="10,3" Click="btnEditWarehouse_Click"/>
+                        <Button Name="btnDeleteWarehouse" Content="Удалить" Margin="5" Padding="10,3" Click="btnDeleteWarehouse_Click"/>
+                    </StackPanel>
+                    <DataGrid Name="dgWarehouses" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" Margin="5">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding WarehouseId}" Width="Auto"/>
+                            <DataGridTextColumn Header="Название склада" Binding="{Binding WarehouseName}" Width="*"/>
+                            <DataGridTextColumn Header="Адрес" Binding="{Binding Address}" Width="*"/>
+                            <DataGridTextColumn Header="Тип склада" Binding="{Binding WarehouseTypeName}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Вкладка "Товары" -->
+            <TabItem Header="Товары" Name="tabProducts">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <Button Name="btnAddProduct" Content="Добавить" Margin="5" Padding="10,3" Click="btnAddProduct_Click"/>
+                        <Button Name="btnEditProduct" Content="Редактировать" Margin="5" Padding="10,3" Click="btnEditProduct_Click"/>
+                        <Button Name="btnDeleteProduct" Content="Удалить" Margin="5" Padding="10,3" Click="btnDeleteProduct_Click"/>
+                    </StackPanel>
+                    <DataGrid Name="dgProducts" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" Margin="5">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding ProductId}" Width="Auto"/>
+                            <DataGridTextColumn Header="Название товара" Binding="{Binding ProductName}" Width="*" />
+                            <DataGridTextColumn Header="Артикул" Binding="{Binding Article}" Width="*" />
+                            <DataGridTextColumn Header="Категория" Binding="{Binding CategoryName}" Width="*" />
+                            <DataGridTextColumn Header="Ед. изм." Binding="{Binding UnitName}" Width="Auto" />
+                            <DataGridTextColumn Header="Цена" Binding="{Binding Price, StringFormat=C}" Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <!-- Вкладка "Клиенты" -->
+            <TabItem Header="Клиенты" Name="tabClients">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <Button Name="btnAddClient" Content="Добавить" Margin="5" Padding="10,3" Click="btnAddClient_Click"/>
+                        <Button Name="btnEditClient" Content="Редактировать" Margin="5" Padding="10,3" Click="btnEditClient_Click"/>
+                        <Button Name="btnDeleteClient" Content="Удалить" Margin="5" Padding="10,3" Click="btnDeleteClient_Click"/>
+                    </StackPanel>
+                    <DataGrid Name="dgClients" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" Margin="5">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding CustomerId}" Width="Auto"/>
+                            <DataGridTextColumn Header="Название клиента" Binding="{Binding CustomerName}" Width="*" />
+                            <DataGridTextColumn Header="Телефон" Binding="{Binding ContactPhone}" Width="*" />
+                            <DataGridTextColumn Header="Email" Binding="{Binding ContactEmail}" Width="*" />
+                            <DataGridTextColumn Header="Адрес" Binding="{Binding Address}" Width="*" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <!-- Вкладка "Поставщики" -->
+            <TabItem Header="Поставщики" Name="tabSuppliers">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <Button Name="btnAddSupplier" Content="Добавить" Margin="5" Padding="10,3" Click="btnAddSupplier_Click"/>
+                        <Button Name="btnEditSupplier" Content="Редактировать" Margin="5" Padding="10,3" Click="btnEditSupplier_Click"/>
+                        <Button Name="btnDeleteSupplier" Content="Удалить" Margin="5" Padding="10,3" Click="btnDeleteSupplier_Click"/>
+                    </StackPanel>
+                    <DataGrid Name="dgSuppliers" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" Margin="5">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding SupplierId}" Width="Auto"/>
+                            <DataGridTextColumn Header="Название поставщика" Binding="{Binding SupplierName}" Width="*" />
+                            <DataGridTextColumn Header="ИНН" Binding="{Binding INN}" Width="*" />
+                            <DataGridTextColumn Header="КПП" Binding="{Binding KPP}" Width="*" />
+                            <DataGridTextColumn Header="Телефон" Binding="{Binding ContactPhone}" Width="*" />
+                            <DataGridTextColumn Header="Email" Binding="{Binding ContactEmail}" Width="*" />
+                            <DataGridTextColumn Header="Адрес" Binding="{Binding Address}" Width="*" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            
+            
+            
+            <TabItem Header="Отчёт по складам" Name="tabReportWarehouse" Visibility="Collapsed">
+                <DataGrid Name="dgReportWarehouse" AutoGenerateColumns="True" IsReadOnly="true"></DataGrid>
+            </TabItem>
+
+            <TabItem Header="Отчёт по оборотам" Name="tabReportTurnover" Visibility="Collapsed">
+                <DataGrid Name="dgReportTurnover" AutoGenerateColumns="True" IsReadOnly="true"></DataGrid>
+            </TabItem>
+
+            <TabItem Header="Отчёт по остаткам" Name="tabReportStock" Visibility="Collapsed">
+                <DataGrid Name="dgReportStock" AutoGenerateColumns="True" IsReadOnly="true"></DataGrid>
+            </TabItem>
+
+            <TabItem Header="Отчёт по инвентаризации" Name="tabReportInventory" Visibility="Collapsed">
+                <DataGrid Name="dgReportInventory" AutoGenerateColumns="True" IsReadOnly="true"></DataGrid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

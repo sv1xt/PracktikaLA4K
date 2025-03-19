@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище SkladUchetModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CustomerOrderItems">
+    <Key>
+      <PropertyRef Name="CustomerOrderItemID" />
+    </Key>
+    <Property Name="CustomerOrderItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerOrderID" Type="int" Nullable="false" />
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerOrders">
+    <Key>
+      <PropertyRef Name="CustomerOrderID" />
+    </Key>
+    <Property Name="CustomerOrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderNumber" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="OrderDate" Type="date" Nullable="false" />
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="TotalAmount" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="PurchaseOrderItems">
+    <Key>
+      <PropertyRef Name="PurchaseOrderItemID" />
+    </Key>
+    <Property Name="PurchaseOrderItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PurchaseOrderID" Type="int" Nullable="false" />
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PurchaseOrders">
+    <Key>
+      <PropertyRef Name="PurchaseOrderID" />
+    </Key>
+    <Property Name="PurchaseOrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderNumber" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="OrderDate" Type="date" Nullable="false" />
+    <Property Name="SupplierID" Type="int" Nullable="false" />
+    <Property Name="TotalAmount" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="ЕдиницыИзмерения">
+    <Key>
+      <PropertyRef Name="Unit_ID" />
+    </Key>
+    <Property Name="Unit_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название_Единицы_Измерения" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ЗоныХранения">
+    <Key>
+      <PropertyRef Name="Storage_Location_ID" />
+    </Key>
+    <Property Name="Storage_Location_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Warehouse_ID" Type="int" Nullable="false" />
+    <Property Name="Название_Зоны" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Инвентаризации">
+    <Key>
+      <PropertyRef Name="Inventory_ID" />
+    </Key>
+    <Property Name="Inventory_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Дата_Инвентаризации" Type="date" Nullable="false" />
+    <Property Name="User_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="КатегорииТоваров">
+    <Key>
+      <PropertyRef Name="Category_ID" />
+    </Key>
+    <Property Name="Category_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название_Категории" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Клиенты">
+    <Key>
+      <PropertyRef Name="Customer_ID" />
+    </Key>
+    <Property Name="Customer_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название_Клиента" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Контактный_Телефон" Type="varchar" MaxLength="50" />
+    <Property Name="Контактный_Email" Type="varchar" MaxLength="255" />
+    <Property Name="Адрес" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Пользователи">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Имя_Пользователя" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Хеш_Пароля" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Соль" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Role_ID" Type="int" Nullable="false" />
+    <Property Name="Электронная_Почта" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Двухфакторная_Аутентификация_Включена" Type="bit" />
+    <Property Name="Секрет_Двухфакторной_Аутентификации" Type="varchar" MaxLength="255" />
+    <Property Name="Фотография" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Поставщики">
+    <Key>
+      <PropertyRef Name="Supplier_ID" />
+    </Key>
+    <Property Name="Supplier_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название_Поставщика" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ИНН" Type="varchar" MaxLength="20" />
+    <Property Name="КПП" Type="varchar" MaxLength="20" />
+    <Property Name="Контактный_Телефон" Type="varchar" MaxLength="50" />
+    <Property Name="Контактный_Email" Type="varchar" MaxLength="255" />
+    <Property Name="Адрес" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="ПриходныеНакладные">
+    <Key>
+      <PropertyRef Name="Invoice_ID" />
+    </Key>
+    <Property Name="Invoice_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Номер_Накладной" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Дата_Накладной" Type="date" Nullable="false" />
+    <Property Name="Supplier_ID" Type="int" Nullable="false" />
+    <Property Name="Сумма_Накладной" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Файл" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="РасходныеНакладные">
+    <Key>
+      <PropertyRef Name="Invoice_ID" />
+    </Key>
+    <Property Name="Invoice_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Номер_Накладной" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Дата_Накладной" Type="date" Nullable="false" />
+    <Property Name="Customer_ID" Type="int" Nullable="false" />
+    <Property Name="Сумма_Накладной" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Файл" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Роли">
+    <Key>
+      <PropertyRef Name="Role_ID" />
+    </Key>
+    <Property Name="Role_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название_Роли" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Склады">
+    <Key>
+      <PropertyRef Name="Warehouse_ID" />
+    </Key>
+    <Property Name="Warehouse_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название_Склада" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Адрес" Type="varchar" MaxLength="255" />
+    <Property Name="Warehouse_Type_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="СтрокиИнвентаризации">
+    <Key>
+      <PropertyRef Name="Inventory_Item_ID" />
+    </Key>
+    <Property Name="Inventory_Item_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Inventory_ID" Type="int" Nullable="false" />
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+    <Property Name="Фактическое_Количество" Type="int" Nullable="false" />
+    <Property Name="Учетное_Количество" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="СтрокиПриходнойНакладной">
+    <Key>
+      <PropertyRef Name="Invoice_Item_ID" />
+    </Key>
+    <Property Name="Invoice_Item_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Invoice_ID" Type="int" Nullable="false" />
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+    <Property Name="Количество" Type="int" Nullable="false" />
+    <Property Name="Цена" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="СтрокиРасходнойНакладной">
+    <Key>
+      <PropertyRef Name="Invoice_Item_ID" />
+    </Key>
+    <Property Name="Invoice_Item_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Invoice_ID" Type="int" Nullable="false" />
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+    <Property Name="Количество" Type="int" Nullable="false" />
+    <Property Name="Цена" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ТипыСкладов">
+    <Key>
+      <PropertyRef Name="Warehouse_Type_ID" />
+    </Key>
+    <Property Name="Warehouse_Type_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название_Типа" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Товары">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+    </Key>
+    <Property Name="Product_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название_Товара" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Артикул" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Штрихкод" Type="varchar" MaxLength="255" />
+    <Property Name="Category_ID" Type="int" Nullable="false" />
+    <Property Name="Unit_ID" Type="int" Nullable="false" />
+    <Property Name="Цена" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Серийный_Номер" Type="varchar" MaxLength="255" />
+    <Property Name="Минимальный_Остаток" Type="int" />
+    <Property Name="Срок_Годности" Type="date" />
+    <Property Name="Изображение" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="ТоварыНаСкладе">
+    <Key>
+      <PropertyRef Name="Warehouse_ID" />
+      <PropertyRef Name="Product_ID" />
+    </Key>
+    <Property Name="Warehouse_ID" Type="int" Nullable="false" />
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+    <Property Name="Storage_Location_ID" Type="int" />
+    <Property Name="Количество" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__CustomerO__Custo__44CA3770">
+    <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="1" />
+    <End Role="CustomerOrders" Type="Self.CustomerOrders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Клиенты">
+        <PropertyRef Name="Customer_ID" />
+      </Principal>
+      <Dependent Role="CustomerOrders">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CustomerO__Custo__47A6A41B">
+    <End Role="CustomerOrders" Type="Self.CustomerOrders" Multiplicity="1" />
+    <End Role="CustomerOrderItems" Type="Self.CustomerOrderItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerOrders">
+        <PropertyRef Name="CustomerOrderID" />
+      </Principal>
+      <Dependent Role="CustomerOrderItems">
+        <PropertyRef Name="CustomerOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CustomerO__Produ__489AC854">
+    <End Role="Товары" Type="Self.Товары" Multiplicity="1" />
+    <End Role="CustomerOrderItems" Type="Self.CustomerOrderItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Товары">
+        <PropertyRef Name="Product_ID" />
+      </Principal>
+      <Dependent Role="CustomerOrderItems">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PurchaseO__Produ__40F9A68C">
+    <End Role="Товары" Type="Self.Товары" Multiplicity="1" />
+    <End Role="PurchaseOrderItems" Type="Self.PurchaseOrderItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Товары">
+        <PropertyRef Name="Product_ID" />
+      </Principal>
+      <Dependent Role="PurchaseOrderItems">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PurchaseO__Purch__40058253">
+    <End Role="PurchaseOrders" Type="Self.PurchaseOrders" Multiplicity="1" />
+    <End Role="PurchaseOrderItems" Type="Self.PurchaseOrderItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseOrders">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Principal>
+      <Dependent Role="PurchaseOrderItems">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PurchaseO__Suppl__3D2915A8">
+    <End Role="Поставщики" Type="Self.Поставщики" Multiplicity="1" />
+    <End Role="PurchaseOrders" Type="Self.PurchaseOrders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Поставщики">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="PurchaseOrders">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ЗоныХране__Wareh__236943A5">
+    <End Role="Склады" Type="Self.Склады" Multiplicity="1" />
+    <End Role="ЗоныХранения" Type="Self.ЗоныХранения" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Склады">
+        <PropertyRef Name="Warehouse_ID" />
+      </Principal>
+      <Dependent Role="ЗоныХранения">
+        <PropertyRef Name="Warehouse_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Инвентари__User___1CBC4616">
+    <End Role="Пользователи" Type="Self.Пользователи" Multiplicity="1" />
+    <End Role="Инвентаризации" Type="Self.Инвентаризации" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Пользователи">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Инвентаризации">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Пользоват__Role___76969D2E">
+    <End Role="Роли" Type="Self.Роли" Multiplicity="1" />
+    <End Role="Пользователи" Type="Self.Пользователи" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Роли">
+        <PropertyRef Name="Role_ID" />
+      </Principal>
+      <Dependent Role="Пользователи">
+        <PropertyRef Name="Role_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Приходные__Suppl__0E6E26BF">
+    <End Role="Поставщики" Type="Self.Поставщики" Multiplicity="1" />
+    <End Role="ПриходныеНакладные" Type="Self.ПриходныеНакладные" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Поставщики">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="ПриходныеНакладные">
+        <PropertyRef Name="Supplier_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Расходные__Custo__160F4887">
+    <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="1" />
+    <End Role="РасходныеНакладные" Type="Self.РасходныеНакладные" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Клиенты">
+        <PropertyRef Name="Customer_ID" />
+      </Principal>
+      <Dependent Role="РасходныеНакладные">
+        <PropertyRef Name="Customer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Склады__Warehous__01142BA1">
+    <End Role="ТипыСкладов" Type="Self.ТипыСкладов" Multiplicity="1" />
+    <End Role="Склады" Type="Self.Склады" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ТипыСкладов">
+        <PropertyRef Name="Warehouse_Type_ID" />
+      </Principal>
+      <Dependent Role="Склады">
+        <PropertyRef Name="Warehouse_Type_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__СтрокиИнв__Inven__1F98B2C1">
+    <End Role="Инвентаризации" Type="Self.Инвентаризации" Multiplicity="1" />
+    <End Role="СтрокиИнвентаризации" Type="Self.СтрокиИнвентаризации" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Инвентаризации">
+        <PropertyRef Name="Inventory_ID" />
+      </Principal>
+      <Dependent Role="СтрокиИнвентаризации">
+        <PropertyRef Name="Inventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__СтрокиИнв__Produ__208CD6FA">
+    <End Role="Товары" Type="Self.Товары" Multiplicity="1" />
+    <End Role="СтрокиИнвентаризации" Type="Self.СтрокиИнвентаризации" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Товары">
+        <PropertyRef Name="Product_ID" />
+      </Principal>
+      <Dependent Role="СтрокиИнвентаризации">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__СтрокиПри__Invoi__114A936A">
+    <End Role="ПриходныеНакладные" Type="Self.ПриходныеНакладные" Multiplicity="1" />
+    <End Role="СтрокиПриходнойНакладной" Type="Self.СтрокиПриходнойНакладной" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ПриходныеНакладные">
+        <PropertyRef Name="Invoice_ID" />
+      </Principal>
+      <Dependent Role="СтрокиПриходнойНакладной">
+        <PropertyRef Name="Invoice_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__СтрокиПри__Produ__123EB7A3">
+    <End Role="Товары" Type="Self.Товары" Multiplicity="1" />
+    <End Role="СтрокиПриходнойНакладной" Type="Self.СтрокиПриходнойНакладной" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Товары">
+        <PropertyRef Name="Product_ID" />
+      </Principal>
+      <Dependent Role="СтрокиПриходнойНакладной">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__СтрокиРас__Invoi__18EBB532">
+    <End Role="РасходныеНакладные" Type="Self.РасходныеНакладные" Multiplicity="1" />
+    <End Role="СтрокиРасходнойНакладной" Type="Self.СтрокиРасходнойНакладной" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="РасходныеНакладные">
+        <PropertyRef Name="Invoice_ID" />
+      </Principal>
+      <Dependent Role="СтрокиРасходнойНакладной">
+        <PropertyRef Name="Invoice_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__СтрокиРас__Produ__19DFD96B">
+    <End Role="Товары" Type="Self.Товары" Multiplicity="1" />
+    <End Role="СтрокиРасходнойНакладной" Type="Self.СтрокиРасходнойНакладной" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Товары">
+        <PropertyRef Name="Product_ID" />
+      </Principal>
+      <Dependent Role="СтрокиРасходнойНакладной">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Товары__Category__09A971A2">
+    <End Role="КатегорииТоваров" Type="Self.КатегорииТоваров" Multiplicity="1" />
+    <End Role="Товары" Type="Self.Товары" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="КатегорииТоваров">
+        <PropertyRef Name="Category_ID" />
+      </Principal>
+      <Dependent Role="Товары">
+        <PropertyRef Name="Category_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Товары__Unit_ID__0A9D95DB">
+    <End Role="ЕдиницыИзмерения" Type="Self.ЕдиницыИзмерения" Multiplicity="1" />
+    <End Role="Товары" Type="Self.Товары" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ЕдиницыИзмерения">
+        <PropertyRef Name="Unit_ID" />
+      </Principal>
+      <Dependent Role="Товары">
+        <PropertyRef Name="Unit_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ТоварыНаС__Produ__2739D489">
+    <End Role="Товары" Type="Self.Товары" Multiplicity="1" />
+    <End Role="ТоварыНаСкладе" Type="Self.ТоварыНаСкладе" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Товары">
+        <PropertyRef Name="Product_ID" />
+      </Principal>
+      <Dependent Role="ТоварыНаСкладе">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ТоварыНаС__Stora__282DF8C2">
+    <End Role="ЗоныХранения" Type="Self.ЗоныХранения" Multiplicity="0..1" />
+    <End Role="ТоварыНаСкладе" Type="Self.ТоварыНаСкладе" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ЗоныХранения">
+        <PropertyRef Name="Storage_Location_ID" />
+      </Principal>
+      <Dependent Role="ТоварыНаСкладе">
+        <PropertyRef Name="Storage_Location_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ТоварыНаС__Wareh__2645B050">
+    <End Role="Склады" Type="Self.Склады" Multiplicity="1" />
+    <End Role="ТоварыНаСкладе" Type="Self.ТоварыНаСкладе" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Склады">
+        <PropertyRef Name="Warehouse_ID" />
+      </Principal>
+      <Dependent Role="ТоварыНаСкладе">
+        <PropertyRef Name="Warehouse_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище SkladUchetModelContainer">
+    <EntitySet Name="CustomerOrderItems" EntityType="Self.CustomerOrderItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomerOrders" EntityType="Self.CustomerOrders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PurchaseOrderItems" EntityType="Self.PurchaseOrderItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PurchaseOrders" EntityType="Self.PurchaseOrders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ЕдиницыИзмерения" EntityType="Self.ЕдиницыИзмерения" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ЗоныХранения" EntityType="Self.ЗоныХранения" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Инвентаризации" EntityType="Self.Инвентаризации" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="КатегорииТоваров" EntityType="Self.КатегорииТоваров" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Клиенты" EntityType="Self.Клиенты" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Пользователи" EntityType="Self.Пользователи" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Поставщики" EntityType="Self.Поставщики" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ПриходныеНакладные" EntityType="Self.ПриходныеНакладные" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="РасходныеНакладные" EntityType="Self.РасходныеНакладные" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Роли" EntityType="Self.Роли" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Склады" EntityType="Self.Склады" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="СтрокиИнвентаризации" EntityType="Self.СтрокиИнвентаризации" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="СтрокиПриходнойНакладной" EntityType="Self.СтрокиПриходнойНакладной" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="СтрокиРасходнойНакладной" EntityType="Self.СтрокиРасходнойНакладной" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ТипыСкладов" EntityType="Self.ТипыСкладов" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Товары" EntityType="Self.Товары" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ТоварыНаСкладе" EntityType="Self.ТоварыНаСкладе" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__CustomerO__Custo__44CA3770" Association="Self.FK__CustomerO__Custo__44CA3770">
+      <End Role="Клиенты" EntitySet="Клиенты" />
+      <End Role="CustomerOrders" EntitySet="CustomerOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CustomerO__Custo__47A6A41B" Association="Self.FK__CustomerO__Custo__47A6A41B">
+      <End Role="CustomerOrders" EntitySet="CustomerOrders" />
+      <End Role="CustomerOrderItems" EntitySet="CustomerOrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CustomerO__Produ__489AC854" Association="Self.FK__CustomerO__Produ__489AC854">
+      <End Role="Товары" EntitySet="Товары" />
+      <End Role="CustomerOrderItems" EntitySet="CustomerOrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PurchaseO__Produ__40F9A68C" Association="Self.FK__PurchaseO__Produ__40F9A68C">
+      <End Role="Товары" EntitySet="Товары" />
+      <End Role="PurchaseOrderItems" EntitySet="PurchaseOrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PurchaseO__Purch__40058253" Association="Self.FK__PurchaseO__Purch__40058253">
+      <End Role="PurchaseOrders" EntitySet="PurchaseOrders" />
+      <End Role="PurchaseOrderItems" EntitySet="PurchaseOrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PurchaseO__Suppl__3D2915A8" Association="Self.FK__PurchaseO__Suppl__3D2915A8">
+      <End Role="Поставщики" EntitySet="Поставщики" />
+      <End Role="PurchaseOrders" EntitySet="PurchaseOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ЗоныХране__Wareh__236943A5" Association="Self.FK__ЗоныХране__Wareh__236943A5">
+      <End Role="Склады" EntitySet="Склады" />
+      <End Role="ЗоныХранения" EntitySet="ЗоныХранения" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Инвентари__User___1CBC4616" Association="Self.FK__Инвентари__User___1CBC4616">
+      <End Role="Пользователи" EntitySet="Пользователи" />
+      <End Role="Инвентаризации" EntitySet="Инвентаризации" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Пользоват__Role___76969D2E" Association="Self.FK__Пользоват__Role___76969D2E">
+      <End Role="Роли" EntitySet="Роли" />
+      <End Role="Пользователи" EntitySet="Пользователи" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Приходные__Suppl__0E6E26BF" Association="Self.FK__Приходные__Suppl__0E6E26BF">
+      <End Role="Поставщики" EntitySet="Поставщики" />
+      <End Role="ПриходныеНакладные" EntitySet="ПриходныеНакладные" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Расходные__Custo__160F4887" Association="Self.FK__Расходные__Custo__160F4887">
+      <End Role="Клиенты" EntitySet="Клиенты" />
+      <End Role="РасходныеНакладные" EntitySet="РасходныеНакладные" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Склады__Warehous__01142BA1" Association="Self.FK__Склады__Warehous__01142BA1">
+      <End Role="ТипыСкладов" EntitySet="ТипыСкладов" />
+      <End Role="Склады" EntitySet="Склады" />
+    </AssociationSet>
+    <AssociationSet Name="FK__СтрокиИнв__Inven__1F98B2C1" Association="Self.FK__СтрокиИнв__Inven__1F98B2C1">
+      <End Role="Инвентаризации" EntitySet="Инвентаризации" />
+      <End Role="СтрокиИнвентаризации" EntitySet="СтрокиИнвентаризации" />
+    </AssociationSet>
+    <AssociationSet Name="FK__СтрокиИнв__Produ__208CD6FA" Association="Self.FK__СтрокиИнв__Produ__208CD6FA">
+      <End Role="Товары" EntitySet="Товары" />
+      <End Role="СтрокиИнвентаризации" EntitySet="СтрокиИнвентаризации" />
+    </AssociationSet>
+    <AssociationSet Name="FK__СтрокиПри__Invoi__114A936A" Association="Self.FK__СтрокиПри__Invoi__114A936A">
+      <End Role="ПриходныеНакладные" EntitySet="ПриходныеНакладные" />
+      <End Role="СтрокиПриходнойНакладной" EntitySet="СтрокиПриходнойНакладной" />
+    </AssociationSet>
+    <AssociationSet Name="FK__СтрокиПри__Produ__123EB7A3" Association="Self.FK__СтрокиПри__Produ__123EB7A3">
+      <End Role="Товары" EntitySet="Товары" />
+      <End Role="СтрокиПриходнойНакладной" EntitySet="СтрокиПриходнойНакладной" />
+    </AssociationSet>
+    <AssociationSet Name="FK__СтрокиРас__Invoi__18EBB532" Association="Self.FK__СтрокиРас__Invoi__18EBB532">
+      <End Role="РасходныеНакладные" EntitySet="РасходныеНакладные" />
+      <End Role="СтрокиРасходнойНакладной" EntitySet="СтрокиРасходнойНакладной" />
+    </AssociationSet>
+    <AssociationSet Name="FK__СтрокиРас__Produ__19DFD96B" Association="Self.FK__СтрокиРас__Produ__19DFD96B">
+      <End Role="Товары" EntitySet="Товары" />
+      <End Role="СтрокиРасходнойНакладной" EntitySet="СтрокиРасходнойНакладной" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Товары__Category__09A971A2" Association="Self.FK__Товары__Category__09A971A2">
+      <End Role="КатегорииТоваров" EntitySet="КатегорииТоваров" />
+      <End Role="Товары" EntitySet="Товары" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Товары__Unit_ID__0A9D95DB" Association="Self.FK__Товары__Unit_ID__0A9D95DB">
+      <End Role="ЕдиницыИзмерения" EntitySet="ЕдиницыИзмерения" />
+      <End Role="Товары" EntitySet="Товары" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ТоварыНаС__Produ__2739D489" Association="Self.FK__ТоварыНаС__Produ__2739D489">
+      <End Role="Товары" EntitySet="Товары" />
+      <End Role="ТоварыНаСкладе" EntitySet="ТоварыНаСкладе" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ТоварыНаС__Stora__282DF8C2" Association="Self.FK__ТоварыНаС__Stora__282DF8C2">
+      <End Role="ЗоныХранения" EntitySet="ЗоныХранения" />
+      <End Role="ТоварыНаСкладе" EntitySet="ТоварыНаСкладе" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ТоварыНаС__Wareh__2645B050" Association="Self.FK__ТоварыНаС__Wareh__2645B050">
+      <End Role="Склады" EntitySet="Склады" />
+      <End Role="ТоварыНаСкладе" EntitySet="ТоварыНаСкладе" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

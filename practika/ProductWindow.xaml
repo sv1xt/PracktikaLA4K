@@ -1,0 +1,54 @@
+﻿<Window x:Class="practika.ProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Товар" Height="400" Width="400"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0">Название товара:</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="txtProductName" Margin="5"/>
+
+        <Label Grid.Row="1" Grid.Column="0">Артикул:</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="txtArticle" Margin="5"/>
+
+        <Label Grid.Row="2" Grid.Column="0">Штрихкод:</Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="txtBarcode" Margin="5"/>
+
+        <Label Grid.Row="3" Grid.Column="0">Категория:</Label>
+        <ComboBox Grid.Row="3" Grid.Column="1" Name="cmbCategory" Margin="5" DisplayMemberPath="Название_Категории" SelectedValuePath="Category_ID"/>
+
+        <Label Grid.Row="4" Grid.Column="0">Единица измерения:</Label>
+        <ComboBox Grid.Row="4" Grid.Column="1" Name="cmbUnit" Margin="5" DisplayMemberPath="Название_Единицы_Измерения" SelectedValuePath="Unit_ID"/>
+
+        <Label Grid.Row="5" Grid.Column="0">Цена:</Label>
+        <TextBox Grid.Row="5" Grid.Column="1" Name="txtPrice" Margin="5"/>
+
+        <Label Grid.Row="6" Grid.Column="0">Серийный номер:</Label>
+        <TextBox Grid.Row="6" Grid.Column="1" Name="txtSerialNumber" Margin="5"/>
+
+        <Label Grid.Row="7" Grid.Column="0">Минимальный остаток:</Label>
+        <TextBox Grid.Row="7" Grid.Column="1" Name="txtMinStockLevel" Margin="5"/>
+
+        <Label Grid.Row="8" Grid.Column="0">Срок годности:</Label>
+        <DatePicker Grid.Row="8" Grid.Column="1" Name="dpExpiryDate" Margin="5"/>
+
+        <Button Grid.Row="9" Grid.Column="1" Name="btnSave" Content="Сохранить" Margin="5" Click="btnSave_Click"/>
+        <Button Grid.Row="9" Grid.Column="0" Name="btnCancel" Content="Отмена" Margin="5" Click="btnCancel_Click"/>
+    </Grid>
+</Window>

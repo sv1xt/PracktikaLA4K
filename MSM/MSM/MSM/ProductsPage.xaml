@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MSM.ProductsPage"
+             Title="Товары">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="WarehousePicker"
+                    Title="Выберите склад"
+                    SelectedIndexChanged="WarehousePicker_SelectedIndexChanged" />
+
+            <CollectionView x:Name="ProductsCollectionView"
+                ItemsSource="{Binding .}"
+                ItemSizingStrategy="MeasureAllItems">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame HasShadow="False" BorderColor="LightGray" Padding="0" Margin="0,0,0,1">
+                            <StackLayout Orientation="Horizontal" Padding="10">
+                                <StackLayout>
+                                    <Label Text="{Binding название_товара}" FontSize="Medium" />
+                                    <Label Text="{Binding артикул_товара, StringFormat='Артикул: {0}'}" FontSize="Small" TextColor="Gray" />
+                                    <Label Text="{Binding цена, StringFormat='Цена: {0:C}'}" FontSize="Small" TextColor="DarkGreen" />
+                                    <Label Text="{Binding минимальный_остаток, StringFormat='Мин. остаток: {0}'}" FontSize="Small" TextColor="DarkOrange" />
+                                    <Label Text="{Binding количество, StringFormat='Количество: {0}'}" FontSize="Small" TextColor="DarkGreen" />
+                                </StackLayout>
+                                <!-- Добавьте Image для отображения QR-кода -->
+                                <Image Source="{Binding qrCodeUrl}" HeightRequest="100" WidthRequest="100" />
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

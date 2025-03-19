@@ -1,0 +1,61 @@
+﻿<Window x:Class="practika.AccountantWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Окно бухгалтера" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Выход" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Отчёты" Name="menuReports">
+                <MenuItem Header="Отчет по складам" Name="menuWarehouseReport" Click="menuWarehouseReport_Click"/>
+                <MenuItem Header="Отчет по оборотам" Name="menuTurnoverReport" Click="menuTurnoverReport_Click"/>
+                <MenuItem Header="Отчет по остаткам" Name="menuStockReport" Click="menuStockReport_Click"/>
+            </MenuItem>
+            <MenuItem Header="Инвентаризация" Name="menuInventory" Click="menuInventory_Click"/>
+        </Menu>
+
+        <TabControl Grid.Row="1" Name="tabControl">
+            <TabItem Header="Отчёт по складам" Name="tabReportWarehouse">
+                <DataGrid Name="dgReportWarehouse" AutoGenerateColumns="True" IsReadOnly="true"/>
+            </TabItem>
+
+            <TabItem Header="Отчёт по оборотам" Name="tabReportTurnover">
+                <DataGrid Name="dgReportTurnover" AutoGenerateColumns="True" IsReadOnly="true"/>
+            </TabItem>
+
+            <TabItem Header="Отчёт по остаткам" Name="tabReportStock">
+                <DataGrid Name="dgReportStock" AutoGenerateColumns="True" IsReadOnly="true" />
+            </TabItem>
+
+            <TabItem Header="Инвентаризация" Name="tabInventory">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
+                        <Button Name="btnStartInventory" Content="Начать инвентаризацию" Margin="5" Padding="10, 3" Click="btnStartInventory_Click"/>
+                        <Button Name="btnCompleteInventory" Content="Завершить инвентаризацию" Margin="5" Padding="10, 3" Click="btnCompleteInventory_Click"/>
+                    </StackPanel>
+                    <DataGrid Name="dgInventory" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="False" SelectionMode="Single" Margin="5">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID Товара" Binding="{Binding ProductId}" Visibility="Collapsed"/>
+                            <DataGridTextColumn Header="Товар" Binding="{Binding ProductName}" Width="*" IsReadOnly="True"/>
+                            <DataGridTextColumn Header="Учетное количество" Binding="{Binding BookQuantity}" Width="*" IsReadOnly="True"/>
+                            <DataGridTextColumn Header="Фактическое количество" Binding="{Binding ActualQuantity}" Width="*"/>
+                            <!--  IsReadOnly="False"-->
+                            <DataGridTextColumn Header="Разница" Binding="{Binding Difference}" Width="*" IsReadOnly="True"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

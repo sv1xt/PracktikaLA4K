@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="MSM.WarehousesPage"
+Title="Склады">
+    <ContentPage.Content>
+        <CollectionView x:Name="WarehousesCollectionView" ItemsSource="{Binding .}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="10">
+                        <Label Text="{Binding название_склада}" FontSize="Medium" />
+                        <Label Text="{Binding адрес_склада}" FontSize="Small" TextColor="Gray" />
+                        <Label Text="{Binding тип_склада}" FontSize="Small" TextColor="DarkGray" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </ContentPage.Content>
+</ContentPage>

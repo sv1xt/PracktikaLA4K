@@ -1,0 +1,31 @@
+﻿<Window x:Class="practika.WarehouseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Склад" Height="250" Width="400"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0">Название склада:</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="txtWarehouseName" Margin="5"/>
+
+        <Label Grid.Row="1" Grid.Column="0">Адрес:</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="txtAddress" Margin="5"/>
+
+        <Label Grid.Row="2" Grid.Column="0">Тип склада:</Label>
+        <ComboBox Grid.Row="2" Grid.Column="1" Name="cmbWarehouseType" Margin="5" DisplayMemberPath="Название_Типа" SelectedValuePath="Warehouse_Type_ID"/>
+
+        <Button Grid.Row="4" Grid.Column="1" Name="btnSave" Content="Сохранить" Margin="5" Click="btnSave_Click"/>
+        <Button Grid.Row="4" Grid.Column="0" Name="btnCancel" Content="Отмена" Margin="5" Click="btnCancel_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,387 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\scanpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\scanpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\profilepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\profilepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\productspage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\productspage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\loginpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\loginpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\app.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\app.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\msm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\msm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\models\\\u043E\u0441\u0442\u0430\u0442\u043A\u0438\u0442\u043E\u0432\u0430\u0440\u043E\u0432.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\models\\\u043E\u0441\u0442\u0430\u0442\u043A\u0438\u0442\u043E\u0432\u0430\u0440\u043E\u0432.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\productspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\productspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\msm.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\msm.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0CF0E63-609C-40EC-B687-A9A6BD88A6CF}|MSM\\MSM.Android\\MSM.Android.csproj|C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\msm\\msm.android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0CF0E63-609C-40EC-B687-A9A6BD88A6CF}|MSM\\MSM.Android\\MSM.Android.csproj|solutionrelative:msm\\msm.android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\warehousespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\warehousespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\models\\\u0442\u043E\u0432\u0430\u0440\u043D\u0430\u0441\u043A\u043B\u0430\u0434\u0435viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\models\\\u0442\u043E\u0432\u0430\u0440\u043D\u0430\u0441\u043A\u043B\u0430\u0434\u0435viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\models\\\u0442\u043E\u0432\u0430\u0440\u044B.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\models\\\u0442\u043E\u0432\u0430\u0440\u044B.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\models\\\u0441\u043A\u043B\u0430\u0434\u044B.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\models\\\u0441\u043A\u043B\u0430\u0434\u044B.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\models\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\models\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\warehousespage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\warehousespage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\scanpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\scanpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|c:\\users\\vodopad_16\\desktop\\msm\\msm\\msm\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B88E81-C0E7-47EA-BBAE-C1F6905D75E8}|MSM\\MSM\\MSM.csproj|solutionrelative:msm\\msm\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0CF0E63-609C-40EC-B687-A9A6BD88A6CF}|MSM\\MSM.Android\\MSM.Android.csproj|C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\msm\\msm.android\\properties\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "RelativeMoniker": "D:0:0:{F0CF0E63-609C-40EC-B687-A9A6BD88A6CF}|MSM\\MSM.Android\\MSM.Android.csproj|solutionrelative:msm\\msm.android\\properties\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 18,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "MSM\\MSM\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\LoginPage.xaml.cs",
+              "RelativeToolTip": "MSM\\MSM\\LoginPage.xaml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAD4vz0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:23:28.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProfilePage.xaml",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\ProfilePage.xaml",
+              "RelativeDocumentMoniker": "MSM\\MSM\\ProfilePage.xaml",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\ProfilePage.xaml",
+              "RelativeToolTip": "MSM\\MSM\\ProfilePage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T02:26:27.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "\u0422\u043E\u0432\u0430\u0440\u041D\u0430\u0421\u043A\u043B\u0430\u0434\u0435ViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\Models\\\u0422\u043E\u0432\u0430\u0440\u041D\u0430\u0421\u043A\u043B\u0430\u0434\u0435ViewModel.cs",
+              "RelativeDocumentMoniker": "MSM\\MSM\\Models\\\u0422\u043E\u0432\u0430\u0440\u041D\u0430\u0421\u043A\u043B\u0430\u0434\u0435ViewModel.cs",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\Models\\\u0422\u043E\u0432\u0430\u0440\u041D\u0430\u0421\u043A\u043B\u0430\u0434\u0435ViewModel.cs",
+              "RelativeToolTip": "MSM\\MSM\\Models\\\u0422\u043E\u0432\u0430\u0440\u041D\u0430\u0421\u043A\u043B\u0430\u0434\u0435ViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:21:25.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "MSM\\MSM\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\LoginPage.xaml",
+              "RelativeToolTip": "MSM\\MSM\\LoginPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T02:23:04.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\App.xaml.cs",
+              "RelativeDocumentMoniker": "MSM\\MSM\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\App.xaml.cs",
+              "RelativeToolTip": "MSM\\MSM\\App.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowBgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:11:01.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MSM.csproj",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\MSM.csproj",
+              "RelativeDocumentMoniker": "MSM\\MSM\\MSM.csproj",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\MSM.csproj",
+              "RelativeToolTip": "MSM\\MSM\\MSM.csproj",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-17T02:37:53.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "\u0422\u043E\u0432\u0430\u0440\u044B.cs",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\Models\\\u0422\u043E\u0432\u0430\u0440\u044B.cs",
+              "RelativeDocumentMoniker": "MSM\\MSM\\Models\\\u0422\u043E\u0432\u0430\u0440\u044B.cs",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\Models\\\u0422\u043E\u0432\u0430\u0440\u044B.cs",
+              "RelativeToolTip": "MSM\\MSM\\Models\\\u0422\u043E\u0432\u0430\u0440\u044B.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:21:47.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProfilePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\ProfilePage.xaml.cs",
+              "RelativeDocumentMoniker": "MSM\\MSM\\ProfilePage.xaml.cs",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\ProfilePage.xaml.cs",
+              "RelativeToolTip": "MSM\\MSM\\ProfilePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:26:43.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\ProductsPage.xaml.cs",
+              "RelativeDocumentMoniker": "MSM\\MSM\\ProductsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\ProductsPage.xaml.cs",
+              "RelativeToolTip": "MSM\\MSM\\ProductsPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:25:38.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "\u041E\u0441\u0442\u0430\u0442\u043A\u0438\u0422\u043E\u0432\u0430\u0440\u043E\u0432.cs",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\Models\\\u041E\u0441\u0442\u0430\u0442\u043A\u0438\u0422\u043E\u0432\u0430\u0440\u043E\u0432.cs",
+              "RelativeDocumentMoniker": "MSM\\MSM\\Models\\\u041E\u0441\u0442\u0430\u0442\u043A\u0438\u0422\u043E\u0432\u0430\u0440\u043E\u0432.cs",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\Models\\\u041E\u0441\u0442\u0430\u0442\u043A\u0438\u0422\u043E\u0432\u0430\u0440\u043E\u0432.cs",
+              "RelativeToolTip": "MSM\\MSM\\Models\\\u041E\u0441\u0442\u0430\u0442\u043A\u0438\u0422\u043E\u0432\u0430\u0440\u043E\u0432.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:19:50.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MSM",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\MSM.csproj",
+              "RelativeDocumentMoniker": "MSM\\MSM\\MSM.csproj",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\MSM.csproj",
+              "RelativeToolTip": "MSM\\MSM\\MSM.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-17T02:44:24.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WarehousesPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\WarehousesPage.xaml.cs",
+              "RelativeDocumentMoniker": "MSM\\MSM\\WarehousesPage.xaml.cs",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\WarehousesPage.xaml.cs",
+              "RelativeToolTip": "MSM\\MSM\\WarehousesPage.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwCYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:30:24.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainActivity.cs",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM.Android\\MainActivity.cs",
+              "RelativeDocumentMoniker": "MSM\\MSM.Android\\MainActivity.cs",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM.Android\\MainActivity.cs",
+              "RelativeToolTip": "MSM\\MSM.Android\\MainActivity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:12:08.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\App.xaml",
+              "RelativeDocumentMoniker": "MSM\\MSM\\App.xaml",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\App.xaml",
+              "RelativeToolTip": "MSM\\MSM\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T02:10:59.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "\u0421\u043A\u043B\u0430\u0434\u044B.cs",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\Models\\\u0421\u043A\u043B\u0430\u0434\u044B.cs",
+              "RelativeDocumentMoniker": "MSM\\MSM\\Models\\\u0421\u043A\u043B\u0430\u0434\u044B.cs",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\Models\\\u0421\u043A\u043B\u0430\u0434\u044B.cs",
+              "RelativeToolTip": "MSM\\MSM\\Models\\\u0421\u043A\u043B\u0430\u0434\u044B.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:21:03.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438.cs",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\Models\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438.cs",
+              "RelativeDocumentMoniker": "MSM\\MSM\\Models\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438.cs",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\Models\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438.cs",
+              "RelativeToolTip": "MSM\\MSM\\Models\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:20:38.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MSM\\MSM\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\MainPage.xaml",
+              "RelativeToolTip": "MSM\\MSM\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T02:16:18.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "WarehousesPage.xaml",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\WarehousesPage.xaml",
+              "RelativeDocumentMoniker": "MSM\\MSM\\WarehousesPage.xaml",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\WarehousesPage.xaml",
+              "RelativeToolTip": "MSM\\MSM\\WarehousesPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T02:30:09.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ScanPage.xaml",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\ScanPage.xaml",
+              "RelativeDocumentMoniker": "MSM\\MSM\\ScanPage.xaml",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\ScanPage.xaml",
+              "RelativeToolTip": "MSM\\MSM\\ScanPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T02:16:35.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ScanPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\ScanPage.xaml.cs",
+              "RelativeDocumentMoniker": "MSM\\MSM\\ScanPage.xaml.cs",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\ScanPage.xaml.cs",
+              "RelativeToolTip": "MSM\\MSM\\ScanPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:16:51.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\ProductsPage.xaml",
+              "RelativeDocumentMoniker": "MSM\\MSM\\ProductsPage.xaml",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\ProductsPage.xaml",
+              "RelativeToolTip": "MSM\\MSM\\ProductsPage.xaml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T02:25:21.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MSM\\MSM\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM\\MainPage.xaml.cs",
+              "RelativeToolTip": "MSM\\MSM\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T02:24:42.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM.Android\\Properties\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "MSM\\MSM.Android\\Properties\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\VoDoPaD_16\\Desktop\\MSM\\MSM\\MSM.Android\\Properties\\AndroidManifest.xml",
+              "RelativeToolTip": "MSM\\MSM.Android\\Properties\\AndroidManifest.xml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-03-17T02:13:49.4Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

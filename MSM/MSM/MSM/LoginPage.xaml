@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="MSM.LoginPage"
+Title="MegaSklad: Авторизация">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <!-- StackLayout для изображения и названия в одну строку -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="icon.png"
+                VerticalOptions="Center"
+                HeightRequest="50"
+                WidthRequest="50" />
+                <!-- Настройте размер по необходимости -->
+
+                <Label Text="MegaSklad"
+                   FontSize="Large"
+                   VerticalOptions="Center" />
+            </StackLayout>
+
+            <Label Text="Почта:" />
+            <Entry x:Name="EmailEntry" Keyboard="Email" />
+
+            <Label Text="Пароль:" />
+            <Entry x:Name="PasswordEntry" IsPassword="True" />
+
+            <Button Text="Войти" Clicked="OnLoginClicked" />
+            <Label x:Name="ErrorLabel" TextColor="Red" IsVisible="false" />
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

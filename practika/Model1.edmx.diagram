@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="54b0832d8cb74c549b99a0f5c5e917c0" Name="Diagram1">
+        <EntityTypeShape EntityType="SkladUchetModel.ЕдиницыИзмерения" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.ЗоныХранения" Width="1.5" PointX="3" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.Инвентаризации" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.КатегорииТоваров" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.Клиенты" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.Пользователи" Width="1.5" PointX="0.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.Поставщики" Width="1.5" PointX="3.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.ПриходныеНакладные" Width="1.5" PointX="6" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.РасходныеНакладные" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.Роли" Width="1.5" PointX="1.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.Склады" Width="1.5" PointX="0.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.СтрокиИнвентаризации" Width="1.5" PointX="5.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.СтрокиПриходнойНакладной" Width="1.5" PointX="8.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.СтрокиРасходнойНакладной" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.ТипыСкладов" Width="1.5" PointX="1.5" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.Товары" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SkladUchetModel.ТоварыНаСкладе" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
+        <AssociationConnector Association="SkladUchetModel.FK__Товары__Unit_ID__0A9D95DB" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__ЗоныХране__Wareh__236943A5" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__ТоварыНаС__Stora__282DF8C2" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__Инвентари__User___1CBC4616" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__СтрокиИнв__Inven__1F98B2C1" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__Товары__Category__09A971A2" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__Расходные__Custo__160F4887" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__Пользоват__Role___76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__Приходные__Suppl__0E6E26BF" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__СтрокиПри__Invoi__114A936A" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__СтрокиРас__Invoi__18EBB532" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__Склады__Warehous__01142BA1" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__ТоварыНаС__Wareh__2645B050" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__СтрокиИнв__Produ__208CD6FA" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__СтрокиПри__Produ__123EB7A3" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__СтрокиРас__Produ__19DFD96B" ManuallyRouted="false" />
+        <AssociationConnector Association="SkladUchetModel.FK__ТоварыНаС__Produ__2739D489" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SkladUchetModel.PurchaseOrderItem" Width="1.5" PointX="8.25" PointY="13" />
+        <EntityTypeShape EntityType="SkladUchetModel.PurchaseOrder" Width="1.5" PointX="6" PointY="20" />
+        <AssociationConnector Association="SkladUchetModel.FK__PurchaseO__Produ__40F9A68C" />
+        <AssociationConnector Association="SkladUchetModel.FK__PurchaseO__Purch__40058253" />
+        <AssociationConnector Association="SkladUchetModel.FK__PurchaseO__Suppl__3D2915A8" />
+        <EntityTypeShape EntityType="SkladUchetModel.CustomerOrderItem" Width="1.5" PointX="8.25" PointY="16" />
+        <EntityTypeShape EntityType="SkladUchetModel.CustomerOrder" Width="1.5" PointX="3" PointY="26" />
+        <AssociationConnector Association="SkladUchetModel.FK__CustomerO__Custo__47A6A41B" />
+        <AssociationConnector Association="SkladUchetModel.FK__CustomerO__Produ__489AC854" />
+        <AssociationConnector Association="SkladUchetModel.FK__CustomerO__Custo__44CA3770" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

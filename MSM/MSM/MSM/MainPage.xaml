@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+xmlns:local="clr-namespace:MSM"
+x:Class="MSM.MainPage">
+    <!-- Children -->
+    <local:ProfilePage Title="Профиль" IconImageSource="profile.png"/>
+    <local:WarehousesPage Title="Склады" IconImageSource="warehouse.png" />
+    <local:ProductsPage Title="Товары" IconImageSource="products.png"/>
+    <local:ScanPage Title="Сканировать" IconImageSource="scan.png"/>
+
+</TabbedPage>
